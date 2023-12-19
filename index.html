@@ -1,97 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    * {
-        font-family: "Calibri";
-        text-align: center;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-    h1 {
-        color:#ee7f00;
-    }
-    strong, a  {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    p {
-        font-size: 1.17em;
-    }
-</style>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Email Activation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-    <img src="images/hero-picture.gif" alt="NN & Telios Colaborare" style="width: 80%; background-size: cover;  background-position: center; height: auto">
-    <h1>Draga <span th:text="${user.firstName}"></span></h1>
-    <h3>Contul tău Telios Care a fost activat.</h3>
-    <p style="padding-bottom: 1rem;">Pe lângă protecția financiară pentru spitalizare și intervenții chirurgicale oferită de Asigurarea de Sănătate NN, te ajutăm să ai grijă de tine și de cei dragi prin consultații medicale telefonice, online și video, ne-li-mi-ta-te.</p>
-    <h3>Cum pot intra în contact cu un medic specialist?</h3>
-    <div style="display: flex;">
-    <div style="width: 50%;">
-        <img src="images/NN - Telefon.jpg" alt="Telefon" style="width: 50%">
-        <h3>Prin Telefon</h3>
-        <p>Apelează<strong> 0219464</strong>  și un medic specialist va fi disponibil în doar câteva minute.</p>
+
+<body style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px; width: auto; background-color: #E4F3FF; padding: 5% 15% 10% 15%; font-family: 'Open Sans', sans-serif;">
+
+    <div style="text-align: center;">
+        <img style="margin-top: 1%; padding: 2vh; height: auto; width: 75%; margin: 0 auto;"
+            src="images/hero-picture.gif" alt="NN & Telios Collaboration">
     </div>
-    <div style="width: 50%;">
-        <img src="images/NN - Video.jpg" alt="Laptop" style="width: 76%">
-        <h3>Prin Video</h3>
-        <p>Intră pe <a href="https://portal.telios.ro">portal.telios.ro</a> și autentifică-te cu contul tău Telios, trimite o solicitare, iar un medic specialist va răspunde în cel mai scurt timp posibil.</p>
+
+    <h1 style="text-align: center; color: #ee7f00;">Draga <span th:text="${user.firstName}"></span></h1>
+    <h3 style="text-align: center;">Contul tău Telios Care a fost activat.</h3>
+    <p style="text-align: center; padding-bottom: 1rem;">Pe lângă protecția financiară pentru spitalizare și
+        intervenții chirurgicale oferită de Asigurarea de Sănătate NN, te ajutăm să ai grijă de tine și de cei dragi
+        prin consultații medicale telefonice, online și video, ne-li-mi-ta-te.</p>
+
+    <h3 style="text-align: center;">Cum pot intra în contact cu un medic specialist?</h3>
+
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 50%; text-align: center;">
+            <img src="images/NN - Telefon.jpg" alt="Telefon" style="width: 50%">
+            <h3>Prin Telefon</h3>
+            <p>Apelează<strong> 0219464</strong> și un medic specialist va fi disponibil în doar câteva minute.</p>
+        </div>
+        <div style="width: 50%; text-align: center;">
+            <img src="images/NN - Video.jpg" alt="Laptop" style="width: 76%">
+            <h3>Prin Video</h3>
+            <p>Intră pe <a href="https://portal.telios.ro">portal.telios.ro</a> și autentifică-te cu contul tău
+                Telios, trimite o solicitare, iar un medic specialist va răspunde în cel mai scurt timp posibil.</p>
+        </div>
     </div>
+    <div
+        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); background-color:#fff4ec; border-radius: 5px; width: auto; height: auto; padding: 2vh; text-align: center;">
+        <h3 style="padding-top: 1rem; margin-bottom: 0px;">La NN, tu contezi.</h3>
+        <h3 style="padding-top: 0px; margin-top: 0px;">Și copilul și mămica și tăticul!</h3>
+        <p style="padding-bottom: 1rem;">Păstrează activă <strong>Asigurarea de Sănătate NN</strong> și tu, copiii, soțul
+            sau soția, vă bucurați împreună de servicii de telemedicină, fără alte costuri suplimentare!
+            <p><strong>Accesează</strong> secțiunea <strong>Membrii de familie</strong> și <strong>adaugă-i pe cei
+                    dragi.</strong> Fiecare membru va primi invitație pentru deschiderea și validarea contului său
+                personal NN x Telios.</p>
+            <p style="margin-bottom: 0%; padding-bottom: 1rem;">Pentru minori, părintele va iniția consultații și va
+                gestiona dosarul lor medical.</p>
+        </p>
     </div>
-    <div class="info" style="background-color:#fff4ec;">
-        <div>
-            <h3 style="padding-top: 1rem; margin-bottom: 0px;">La NN, tu contezi.</h3>
-            <h3 style="padding-top:0px; margin-top:0px;">
-                Și copilul și mămica și tăticul!
-            </h3>
-        </div>
-        <div> 
-            <p style="padding-bottom: 1rem;">
-                Păstrează activă <strong>Asigurarea de Sănătate NN</strong> și tu, copiii, soțul sau soția, vă bucurați împreună de servicii de telemedicină, fără alte costuri suplimentare!
-                <p><strong>Accesează</strong> secțiunea <strong>Membrii de familie</strong> și <strong>adaugă-i pe cei dragi.</strong> Fiecare membru va primi invitație pentru deschiderea și validarea contului său personal NN x Telios.</p> 
-                <p style="margin-bottom: 0%; padding-bottom: 1rem;">Pentru minori, părintele va iniția consultații și va gestiona dosarul lor medical.</p>
-                </p>
-        </div>
-        </div>
-        <div style="background-color: #d5e2f0;">
-            <h3 style="margin-top: -1.2rem; padding-top: 1rem;">
-                Cum funcționează suportul în rețeaua de farmacii Telios Care?
-            </h3>
-            <div style="display: flex;">
-                <div class="first-column" style="width: 33%;">
+
+    <div
+        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); background-color: #d5e2f0; border-radius: 5px; width: auto; height: auto; padding: 2vh; text-align: center;">
+        <h3 style="margin-top: -1.2rem; padding-top: 1rem;">Cum funcționează suportul în rețeaua de farmacii Telios
+            Care?</h3>
+        <div style="display: flex; justify-content: center;">
+            <div class="first-column" style="width: 33%; text-align: center;">
                 <h3>Primești rețeta</h3>
-                <p>Medicul încarcă rețeta în contul tău de pacient și ai opțiunea de a o trimite către cea mai apropiată farmacie din rețeaua de farmacii partenere Telios Care.</p>
+                <p>Medicul încarcă rețeta în contul tău de pacient și ai opțiunea de a o trimite către cea mai apropiată
+                    farmacie din rețeaua de farmacii partenere Telios Care.</p>
             </div>
-                <div class="second-column" style="width: 33%;">
+            <div class="second-column" style="width: 33%; text-align: center;">
                 <h3>Primești notificare stoc</h3>
                 <p>Farmacistul confirmă disponibilitatea medicamentelor prescrise în rețetă.</p>
             </div>
-            <div class="third-column" style="width: 33%;">
+            <div class="third-column" style="width: 33%; text-align: center;">
                 <h3>Ridici coletul</h3>
                 <p>Primești codul pentru ridicarea tratamentului prescris prin SMS. Fără cozi, fără griji.</p>
             </div>
-            </div>
-            <div class="bottom-text" style="padding-bottom: 0.15rem;">
-                <p>Lista rețelelor de farmacii partenere este disponibilă aici. </p>
-            </div>
+        </div>
+        <div class="bottom-text" style="padding-bottom: 0.15rem; text-align: center;">
+            <p>Lista rețelelor de farmacii partenere este disponibilă aici.</p>
         </div>
     </div>
-    <h3>Specialități incluse:</h3>
-    <img src="images/Specialties (1).png" alt="Specialități medicale" style="width: 50%;">
-<footer>
-    <p style="font-family: 'Open Sans';text-align:-moz-center;">🧡Pe curând,<p>
-    <p style="font-family: 'Open Sans';text-align:-moz-center;">Echipa NN x Telios Care<p>
-        <p style="font-size: 1em; font-family: 'Open Sans'";>
-            Primiți acest e-mail ca și utilizator înregistrat pe <a href="https://portal.telios.ro">portal.telios.ro.</a> Dacă nu sunteți destinatarul acestui e-mail, vă rugăm să ne contactați la <a href="mailto:info@telios.ro">info@telios.ro</a> .Pentru mai multe informații despre cont și prelucrarea datelor personale, accesați <a href="">Termeni și condiții</a> și <a href="">Politica privind protecția datelor personale.</a> 
-<br><p style="font-size: 1em; font-weight: bold; margin-bottom: 1rem; font-family: 'Open Sans'">Telios Care S.A.</p>
-<p style="font-size: 1em; margin-bottom: 1rem;font-family: 'Open Sans'">CUI: 38204334 / RC: J12/5581/2017</p> 
-<p style="font-size: 1em; margin-bottom: 1rem; font-family: 'Open Sans'">Tăietura Turcului nr. 47, Tetarom, clădirea A1, etajul 1 400221 Cluj-Napoca, România</p>
-<a style="margin-bottom: 1rem; font-size: 1em; font-family: 'Open Sans'" href="">info@telios.ro</a>
-<p style="font-size: 1em; margin-bottom: 1rem; font-family: 'Open Sans'">© 2022 Telios Care. All rights reserved.</p> 
-</p>
-</footer>    
+    <h3 style="text-align: center;">Specialități incluse:</h3>
+    <img src="images/Specialties (1).png" alt="Specialități medicale" style="width: 50%; display: block; margin: 0 auto;">
+    <footer style="text-align: center;">
+        <p style="font-family: 'Open Sans'; font-size: 1em; margin-bottom: 1rem;">🧡Pe curând,</p>
+        <p style="font-family: 'Open Sans'; font-size: 1em; margin-bottom: 1rem;">Echipa NN x Telios Care</p>
+        <p style="font-size: 1em; font-family: 'Open Sans';">
+            Primiți acest e-mail ca și utilizator înregistrat pe <a href="https://portal.telios.ro">portal.telios.ro.</a>
+            Dacă nu sunteți destinatarul acestui e-mail, vă rugăm să ne contactați la <a
+                href="mailto:info@telios.ro">info@telios.ro</a>. Pentru mai multe informații despre cont și
+            prelucrarea datelor personale, accesați <a href="">Termeni și condiții</a> și <a href="">Politica privind
+                protecția datelor personale.</a>
+            <br><p style="font-size: 1em; font-weight: bold; margin-bottom: 1rem;">Telios Care S.A.</p>
+            <p style="font-size: 1em; margin-bottom: 1rem;">CUI: 38204334 / RC: J12/5581/2017</p>
+            <p style="font-size: 1em; margin-bottom: 1rem;">Tăietura Turcului nr. 47, Tetarom, clădirea A1, etajul 1
+                400221 Cluj-Napoca, România</p>
+            <a style="margin-bottom: 1rem; font-size: 1em;" href="mailto:info@telios.ro">info@telios.ro</a>
+            <p style="font-size: 1em; margin-bottom: 1rem;">© 2022 Telios Care. All rights reserved.</p>
+        </p>
+    </footer>
+    <script src="" async defer></script>
 </body>
 </html>
